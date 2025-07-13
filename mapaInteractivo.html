@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa Interactivo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/compost.png">
+</head>
+<body>
+    <header>
+        <h1>Plataforma SIG AgroPlanificador</h1>
+        <nav>
+            <ul>
+                <li><a class="enlaceNav" href="index.html">Inicio</a></li>
+                <li><a class="enlaceNav" href="mapaInteractivo.html">Mapa Interactivo</a></li>
+                <li><a class="enlaceNav" href="registro.html">Registro</a></li>
+                <li><a class="enlaceNav" href="contacto.html">Contacto</a></li>
+                <li><a class="enlaceNav" href="perfil.html">Mi Perfil</a></li> <!-- Enlace a perfil -->
+            </ul>
+        </nav>
+        <div class="fondo1MapaInteractivo"></div>
+    </header>
+    <div class="cuerpo">
+        <div>
+            <div class="flex">
+                <img src="img/iconMapInterac.png" alt="" class="imgIconMapInterac">
+                <h2 class="tituloMapaInteractivo">Bienvenido al Módulo de <br>Visualización Geoespacial</h2>
+            </div>
+            <p class="textoMapaInteractivo1">Este mapa interactivo te permite explorar información clave relacionada con las condiciones agroclimáticas del territorio. Es una herramienta diseñada para apoyar la planificación agrícola, la toma de decisiones técnicas y el manejo sostenible de los recursos naturales.</p>
+        </div>
+            <p class="textoMapaInteractivo2">Puedes seleccionar diferentes variables (como humedad del suelo, fertilidad o riesgo climático) y visualizar cómo se distribuyen geográficamente. Los datos están organizados por zonas agrícolas, y cada color representa una categoría específica, detallada en la leyenda correspondiente.</p>
+            <div class="contenedorInfoMapinterac">
+                <div class="cajaInfoMapInterac">
+                    <div class="flex">
+                        <img src="img/iconLluvia..png" alt="" class="iconInfo1">
+                        <h2 class="tituloInfoMapInterac">Riesgo climático</h2>
+                    </div>
+                    <div class="centrar">
+                        <img src="img/climaInfo.jpg" alt="" class="imgInfoMapInterac">
+                    </div>
+                    <p class="textInfoMapInterac">El conocimiento de amenazas climáticas como sequías, lluvias intensas o heladas es crucial para anticipar impactos negativos. Esto ayuda a tomar decisiones preventivas y adaptar las prácticas agrícolas frente al cambio climático.</p>
+                </div>
+                <div class="cajaInfoMapInterac">
+                    <div class="flex">
+                        <img src="img/iconHumedad.png" alt="" class="iconInfo2">
+                        <h2 class="tituloInfoMapInterac">Humedad del suelo</h2>
+                    </div>
+                    <div class="centrar">
+                        <img src="img/humedadInfo.jpg" alt="" class="imgInfoMapInterac">
+                    </div>
+                    <p class="textInfoMapInterac">Conocer la humedad del suelo permite determinar cuándo y cuánto regar, evitando el desperdicio de agua y el estrés hídrico en los cultivos. Esto mejora la eficiencia del uso del recurso hídrico y optimiza el crecimiento de las plantas.</p>
+                </div>
+                <div class="cajaInfoMapInterac">
+                    <div class="flex">
+                        <img src="img/iconFertilidad.png" alt="" class="iconInfo3">
+                        <h2 class="tituloInfoMapInterac">Fertilidad del suelo</h2>
+                    </div>
+                    <div class="centrar">
+                        <img src="img/fertilidadInfo.jpeg" alt="" class="imgInfoMapInterac">
+                    </div>
+                    <p class="textInfoMapInterac">La fertilidad define la capacidad del suelo para proporcionar nutrientes esenciales a las plantas. Evaluarla permite planificar el uso adecuado de fertilizantes, mejorar el rendimiento agrícola y conservar la salud del suelo a largo plazo.</p>
+                </div>
+        </div>
+        <div class="contenedorGeneralMapa">
+            <div class="caja1Mapa">
+                <h2 class="textoCaja1Mapa">Mapa Interactivo de AgroPlanificador</h2>
+            </div>
+            <div class="caja2Mapa">
+                <div class="subtitulocaja2Mapa">
+                    <p class="textoSubtitulocaja2Mapa">Visualizando la información de:</p>
+                </div>
+                <div class="botonescaja2Mapa">
+                    <button class="botonesInteractivosMapa" id="botonInteractivoMapa1">El clima</button>
+                    <button class="botonesInteractivosMapa" id="botonInteractivoMapa2">La humedad</button>
+                    <button class="botonesInteractivosMapa" id="botonInteractivoMapa3">La fertilidad</button>
+                </div>
+            </div >
+            <div class="caja3Mapa">
+                <div class="cajaMapaInteractivo" id="idcajaMapaInteractivo">
+                    
+                </div>
+                <div class="cajaMapaInteractivoLeyenda">
+                    <p class="tituloLeyenda">Leyenda del mapa</p>
+                    <div class="textoCajaMapaInteractivoLeyenda" id="idcajaMapaInteractivoLeyenda">
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="piePagina">
+            <div class="pieRegistrarse">
+                <p class="pieTituloGrande">Registrate</p>
+                <p class="textoPieRegister">¡Forma parte de nuestra comunidad y vive la experiencia completa! Regístrate en solo unos segundos y accede a beneficios exclusivos, contenido único y todas las herramientas que tenemos para ti. 
+                    <br>¡No esperes más y únete hoy mismo!</p>
+                <button class="botonPie"><a class="botonTextoPieRegister" href="registro.html">Regístrate</a></button>
+            </div>
+            <div class="pieEnlaces">
+                <p class="pieTitulo3">Enlaces</p>
+                <ul class="pieEnlacesLista">
+                    <li class="espacioEnlacesPie"><a class="pieEnlaces" href="index.html">Inicio</a></li>
+                    <li class="espacioEnlacesPie"><a class="pieEnlaces" href="mapaInteractivo.html">Mapa Interactivo</a></li>
+                    <li class="espacioEnlacesPie"><a class="pieEnlaces" href="registro.html">Registro</a></li>
+                    <li class="espacioEnlacesPie"><a class="pieEnlaces" href="contacto.html">Contacto</a></li>
+                    <li class="espacioEnlacesPie"><a class="pieEnlaces" href="perfil.html">Mi Perfil</a></li>
+                </ul>
+                <p class="pieTitulo3">Políticas y Términos</p>
+                <ul class="pieEnlacesLista">
+                    <li class="espacioEnlacesPie"><a class="pieEnlaces" href="">Política de privacidad</a></li>
+                    <li class="espacioEnlacesPie"><a class="pieEnlaces" href="">Términos y condiciones</a></li>
+                </ul>
+                <p class="pieTitulo3">Atribución</p>
+                <ul class="pieEnlacesLista">
+                    <li class="espacioEnlacesPie"><a class="pieEnlaces" href="https://www.flaticon.es" target="_blank">Flaticon</a></li>
+                    <a class="pieEnlaces" target="_blank" href="https://icons8.com">Icons8</a>
+                </ul>
+            </div>
+            <div class="pieContactanos">
+                <p class="pieTitulo1">Contactanos</p>
+                <p class="pieTextoContacto">Horario de atención:
+                    <br>Lunes a viernes de 10:00 a.m. a 8:00 p.m.</p>
+                <p class="pieTextoContacto">Correo Electrónico:
+                    <br>sigagroplanificador@gmail.com</p>
+                <p class="pieTextoContacto">Celular: 
+                    <br>+51 974847248</p>
+                <p class="pieTitulo2">Siguenos</p>
+                    <div>
+                        <a href=""><img class="imgRedesSociles1" src="img/icons8-youtube-play-100.png" alt=""></a>
+                        <a href=""><img class="imgRedesSociles2" src="img/icons8-facebook-100.png" alt=""></a>
+                        <a href=""><img class="imgRedesSociles3" src="img/icons8-twitterx-100.png" alt=""></a>
+                        <a href=""><img class="imgRedesSociles4" src="img/icons8-instagram-96.png" alt=""></a>
+                    </div>
+            </div>
+        </div>
+        <div class="derechosPagina">
+            <p class="textoDerechos">&copy; 2025 <span>Plataforma SIG AgroPlanificador</span> | Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+<script src="scriptMapaInteractivo.js"></script>
+</html>

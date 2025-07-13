@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/compost.png">
+</head>
+<body>
+    <div class="cuerpoResgitro">
+        <h1 class="tituloRegistro">Regístrarse</h1>
+        <form id="registroForm" class="formularioRegistro">
+            <label class="textoRegistro" for="nombre">Nombre</label>
+            <input class="campoRegistro" type="text" id="nombre" required>
+            
+            <label class="textoRegistro" for="email">Correo electrónico</label>
+            <input class="campoRegistro" type="email" id="email" required>
+            
+            <label class="textoRegistro" for="ubicacion">Ubicación</label>
+            <input class="campoRegistro" type="text" id="ubicacion" required>
+
+            <button type="submit" class="botonResgiter1">Registrarse</button>
+            <a class="enlaceBotonRegister" href="index.html"><p class="botonResgiter2">Salir</p></a>
+        </form>
+    </div>
+</body>
+<script>
+        function yaTienesCuenta() {
+            var usuario = JSON.parse(localStorage.getItem('usuario'));
+
+            if (usuario) {
+                window.location.href = "index.html";
+                alert("Usted ya esta registrado");
+            }
+        }
+        yaTienesCuenta();
+        // Validar formulario de registro
+        document.getElementById('registroForm').addEventListener('submit', function(event) {
+            // Obtener los valores de los campos
+            var nombre = document.getElementById('nombre').value;
+            var email = document.getElementById('email').value;
+            var ubicacion = document.getElementById('ubicacion').value;
+
+            // Validaciones
+            if (!nombre || !email || !ubicacion) {
+                alert("Por favor, complete todos los campos.");
+                event.preventDefault(); // Evita que el formulario se envíe
+            } else if (!/\S+@\S+\.\S+/.test(email)) {
+                event.preventDefault();
+            }
+
+            // Guardar los datos en localStorage
+            var usuario = {
+                nombre: nombre,
+                email: email,
+                ubicacion: ubicacion
+            };
+            localStorage.setItem('usuario', JSON.stringify(usuario));
+
+            alert("¡Registro exitoso!");
+
+            // Limpiar los campos del formulario
+            document.getElementById('registroForm').reset();
+        });
+</script>
+</html>

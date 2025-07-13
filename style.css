@@ -1,0 +1,858 @@
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    background-color: 	#E0F2F1;
+}
+/* Navegación #EAEAEA*/
+header {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 12px 0 1px 0;
+    text-align: center;
+}
+header h1 {
+    color: #00bfae;
+    font-size: 2.5em;
+    margin: 0;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 16px;
+    margin-bottom: 10px;
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+.enlaceNav {
+    display: inline-block; 
+    transition: transform 0.3s ease;
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+.enlaceNav:hover {
+    color: #0dd7c6;
+    transform: scale(1.07);
+}
+.fondo1Inicio{
+    width: 100%;
+    height: 560px;
+    background-image: url(img/fondo1Inicio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-bottom: 5px solid rgb(23, 23, 23);
+}
+.fondo1MapaInteractivo{
+    width: 100%;
+    height: 560px;
+    background-image: url(img/fondo1MapaInteractivo-Pica.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-bottom: 5px solid rgb(23, 23, 23);
+}
+.fondo1Contactanos{
+    width: 100%;
+    height: 560px;
+    background-image: url(img/fondo1Contactanos.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-bottom: 5px solid rgb(23, 23, 23);
+}
+.fondo1Perfil{
+    width: 100%;
+    height: 560px;
+    background-image: url(img/Fondo1Perfil.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-bottom: 5px solid rgb(23, 23, 23);
+}
+.bienvenida{
+    padding-top: 85px;
+    margin-left: 60px;
+    width: 46%;
+}
+.texto1{
+    font-size: 3.4em;
+    color: white;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 10px;
+}
+.parrafo1{
+    font-size: 1.08em;
+    color: white;
+    line-height: 1.6;
+    text-align: left;
+}
+.boton1{
+    margin-top: 12px;
+    float: left;
+    background-color: #00bfae;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.boton1Text{
+    text-decoration: none;
+    font-size: 1.2em;
+    color: white;
+}
+.boton1:hover {
+    background-color: #007e7a;
+    transform: scale(1.05);
+}
+/* tamaño del cuerpo de todas las paginas */
+.cuerpo{
+    padding-top: 60px;
+    margin: 0 auto;
+    width: 80%;
+}
+/* Pie de paginas */
+footer{
+    margin-top: 25px;
+    border-top: 6px solid rgb(23, 23, 23);
+    background-color: black;
+    width: 100%;
+    color: rgb(230, 230, 230);
+}
+.piePagina{
+    width: 100%;
+    display: flex;
+}
+.pieRegistrarse{
+    width: 100%;
+    padding-left: 60px;
+}
+.pieRegistrarse p{
+    margin-right: 140px;
+}
+.textoPieRegister{
+    font-size: 16px;
+    text-align: justify;
+}
+.botonTextoPieRegister{
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+}
+.pieEnlaces{
+    width: 100%;
+}
+.pieContactanos{
+    width: 100%;
+}
+.pieTituloGrande{
+    color: #007e7a;
+    font-size: 40px;
+    margin: 0;
+    margin-top: 70px;
+    font-weight: bold;
+}
+.pieTitulo1{
+    margin-top: 70px;
+    margin-bottom: 14px;
+    color: #007e7a;
+    font-weight: bold;
+    font-size: 19px;
+}
+.pieTitulo2{
+    margin-bottom: 10px;
+    margin-top: 38px;
+    color: #007e7a;
+    font-weight: bold;
+    font-size: 19px;
+}
+.pieTitulo3{
+    margin-top: 30px;
+    margin-bottom: 12px;
+    color: #007e7a;
+    font-weight: bold;
+    font-size: 19px;
+}
+.pieTextoContacto{
+    margin: 0;
+    font-size: 15px;
+    margin-bottom: 16px;
+}
+.pieEnlaces{
+    text-decoration: none;
+    color: white;
+}
+.pieEnlaces:hover{
+    color: #00baaa;
+}
+.pieEnlacesLista{
+    list-style-type: none;
+    margin: 0;
+}
+.espacioEnlacesPie{
+    margin-bottom: 10px;
+}
+.botonPie{
+    margin-top: 6px;
+    float: left;
+    background-color: #00bfae;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.botonPie:hover{
+    background-color: #007e7a;
+    transform: scale(1.05);
+}
+.imgRedesSociles1{
+    width: 45px;
+    height: 45px;
+    margin: 0px 7px;
+}
+.imgRedesSociles2{
+    width: 40px;
+    height: 40px;
+    margin: 0px 7px;
+}
+.imgRedesSociles3{
+    width: 40px;
+    height: 40px;
+    margin: 0px 7px;
+}
+.imgRedesSociles4{
+    width: 36px;
+    height: 36px;
+    margin: 0px 7px;
+}
+/* Derechos */
+.derechosPagina{
+    margin-top: 50px;
+    padding-bottom: 9px;
+    width: 100%;
+    text-align: center;
+}
+.textoDerechos{
+    margin-bottom: 0;
+    font-size: 14px;
+}
+.textoDerechos span{
+    color: #00bfae;
+}
+/* Inicio */
+.contenedorGeneralInicio1{
+    width: 100%;
+    text-align: center;
+}
+.titulo1Inicio{
+    font-size: 50px;
+    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #007e7a;
+}
+.texto1Inicio{
+    font-size: 21px;
+    margin: 0;
+    margin: 15px 120px;
+}
+.boton1Inicio{   
+    font-size: 19px;
+    background-color: #00bfae;
+    color: white;
+    border: 2px solid #00ac9e;
+    padding: 9px 21px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.3s ease, transform 0.2s ease;
+    margin-top: 15px;
+    box-shadow: 1px 1px 1px 1px #006a61;
+}
+.boton1Inicio:hover{
+    background-color: #007e7a;
+    transform: scale(1.05);
+}
+.contenedorGeneralInicio2{
+    display: flex;
+    width: 100%;
+    margin-top: 120px;
+    background-color: #007e7a;
+}
+.cajalInicio1{
+    width: 100%;
+}
+.cajalInicio2{
+    width: 100%;
+}
+.titulo2Inicio{
+    font-size: 36px;
+    margin: 0;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    margin-right: 60px;
+    color: white;
+}
+.texto2Inicio{
+    font-size: 18px;
+    margin: 0;
+    margin-top: 23px;
+    margin-left: 50px;
+    margin-right: 60px;
+    text-align: justify;
+    color: white;
+}
+.imgInicio1{
+    width: 100%;
+    height: 330px;
+}
+.contenedorGeneralInicio3{
+    width: 100%;
+    margin-top: 120px;
+}
+.titulo3Inicio{
+    font-size: 36px;
+    margin: 0;
+    color: #007e7a;
+}
+.cajasInicioCaracter{
+    display: flex;
+    width: 100%;
+}
+.cajaInicioCaracteristicas{
+    background-color: white;
+    width: 100%;
+    margin: 30px 50px;
+    border: 2px solid rgb(220, 220, 220);
+    border-radius: 25px;
+    padding: 18px 20px 5px 20px;
+    text-align: center;
+    box-shadow: 1px 1px 2px 1px rgb(156, 156, 156);
+}
+.imgInicioCaracter{
+    width: 48%;
+    margin-bottom: 12px;
+}
+.textoInicioCaracter{
+    font-size: 16px;
+    margin: 0;
+}
+.contenedorGeneralInicio4{
+    display: flex;
+    width: 100%;
+    margin-top: 120px;
+    display: block;
+    background-color: white;
+    border: 2px solid rgb(183, 183, 183);
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px 1px rgb(185, 185, 185);
+}
+.titulo4Inicio{
+    font-size: 36px;
+    margin: 0;
+    color: #007e7a;
+    text-align: center;
+    margin-top: 23px;
+}
+.cajasTextoInicioBeneficios{
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    font-size: 17.5px;
+}
+.textBeneficios{
+    margin: 20px 50px;
+}
+.imgBeneficios{
+    margin-top:17px;
+    width: 100%;
+    height: 500px;
+}
+.contenedorGeneralInicio5{
+    width: 100%;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    display: flex;
+    background-color: white;
+    border: 1px solid rgb(232, 232, 232);
+    box-shadow: 1px 1px 1px 1px #bdbdbd;
+}
+.titulo5Inicio{
+    font-size: 36px;
+    margin: 0;
+    color: #007e7a;
+    margin: 40px 50px 0px 30px;
+}
+.textoContactanosInicio{
+    font-size: 18px;
+    margin: 15px 85px 0px 30px;
+}
+.botonContactanosInicio{
+    font-size: 16px;
+    background-color: #00bfae;
+    color: white;
+    border: 2px solid #00ac9e;
+    padding: 9px 21px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.3s ease, transform 0.2s ease;
+    box-shadow: 1px 1px 1px 1px #006a61;
+    margin: 20px 50px 0px 30px;
+    transition: 0.3s ease, transform 0.2s ease;
+}
+.botonContactanosInicio:hover {
+    background-color: #007e7a;
+    transform: scale(1.05);
+}
+.caja1Inicio5{
+    width: 100%;
+}
+.caja2Inicio5{
+    width: 100%;
+}
+/* Mapa Interactivo */
+.tituloMapaInteractivo{
+    font-size: 43px;
+    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 2px;
+    color: #007e7a;
+}
+.textoMapaInteractivo1{
+    font-size: 19px;
+    line-height: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: justify;
+}
+.textoMapaInteractivo2{
+    font-size: 19px;
+    margin-bottom: 12px;
+    line-height: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: justify;
+}
+.contenedorInfoMapinterac{
+    width: 100%;
+    display: flex;
+}
+.flex{
+    display: flex;
+}
+.imgIconMapInterac{
+    margin-top: 30px;
+    margin-right: 10px;
+    width: 65px;
+    height: 65px;
+    text-align: center;
+}
+.cajaInfoMapInterac{
+    background-color: white;
+    width: 100%;
+    margin: 20px 20px;
+    border-radius: 15px;
+    border: 2px solid rgb(210, 210, 210);
+    box-shadow: 1px 1px 1px 1px rgb(176, 176, 176);
+}
+.imgInfoMapInterac{
+    width: 90%;
+    height: 160px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    margin-top: 3px;
+}
+.tituloInfoMapInterac{
+    margin: 18px 0px;
+}
+.centrar{
+    text-align: center;
+}
+.iconInfo1{
+    margin-top: 15px;
+    margin-left: 16px;
+    margin-right: 10px;
+    width: 42px;
+    height: 42px;
+}
+.iconInfo2{
+    margin-top: 15px;
+    margin-left: 16px;
+    margin-right: 15px;
+    width: 25px;
+    height: 35px;
+}
+.iconInfo3{
+    margin-top: 15px;
+    margin-left: 16px;
+    margin-right: 15px;
+    width: 35px;
+    height: 35px;
+}
+.textInfoMapInterac{
+    text-align: justify;
+    margin: 0px 20px 32px 20px;
+    font-size: 17px;
+}
+.contenedorGeneralMapa{
+    margin-top: 90px;
+    margin-bottom: 100px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 6px 2px rgb(126, 126, 126);
+    border: 2px solid white;
+    background: linear-gradient(to right, #006d66, #006d66, #53c3ff);
+}
+.caja1Mapa{
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+    border: 1px solid transparent;
+}
+.caja2Mapa{
+    display: flex;
+    background-color: #e8f2fa;
+    border-radius: 5px;
+    margin: 5px 25px;
+}
+.caja3Mapa{
+    width: 100%;
+    display: flex;
+    margin-top: 16px;
+}
+.subtitulocaja2Mapa{
+    width: 50%;
+}
+.botonescaja2Mapa{
+    width: 100%;
+}
+.cajaMapaInteractivo{
+    width: 100%;
+    height: 550px;
+    border-radius: 15px;
+    border: 2px solid white;
+    border-radius: 15px;
+    margin-left: 25px;
+    margin-bottom: 20px;
+}
+.cajaMapaInteractivoLeyenda{
+    width: 28%;
+    background-color: #e8f2fa;
+    margin: 0px 25px 20px 15px;
+    border-radius: 15px;
+}
+.textoCaja1Mapa{
+    margin: 0;
+    color: white;
+    margin-left: 25px;
+    font-size: 37px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.textoSubtitulocaja2Mapa{
+    margin: 0;
+    font-size: 21px;
+    margin-left: 60px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.botonesInteractivosMapa{
+    background-color: white;
+    font-size: 17px;
+    padding: 8px 30px;
+    border-radius: 13px;
+    color: #00877b;
+    border: 2px solid #008479;
+    margin: 12px 38px;
+}
+.botonesInteractivosMapa:hover{
+    background-color: #007369;
+    color: white;
+    scale: 1.06;
+    transition-duration: 0.3s;
+}
+.botonesActivo{
+  background-color: #00877b !important;
+  color: white !important;
+}
+.tituloLeyenda{
+    font-size: 24px;
+    margin-top: 55px;
+    text-align: center;
+    font-weight: bold;
+}
+.textoLeyenda{
+    font-size: 17px;
+    margin: 17px 26px;
+}
+/* Perfil */
+.contenedorGeneral{
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+.cotenedor1Perfil{
+    width: 100%;
+    margin-bottom: 60px;
+    background-color: white;
+    border: 2px solid rgb(235, 235, 235);
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 1px rgb(175, 175, 175);
+}
+.tituloPerfil{
+    font-size: 45px;
+    margin: 0;
+    margin-bottom: 10px;
+    color: #007e7a;
+    margin-top: 15px;
+    margin-left: 26px;
+    margin-right: 26px;
+}
+.textoPerfil{
+    margin: 0;
+    margin-bottom: 18px;
+    font-size: 20px;
+    margin-left: 26px;
+    margin-right: 26px;
+}
+.textoPPerfil{
+    margin: 0;
+    font-size: 20px;
+    margin-bottom: 33px;
+    margin-left: 26px;
+    margin-right: 26px;
+}
+.cotenedor2Perfil{
+    width: 100%;
+    text-align: center;
+}
+.imgUser{
+    width: 46%;
+}
+/* Registro */
+.cuerpoResgitro{
+    margin: 0 auto;
+    background-color: #007e7a;
+    border: 2px solid #006965;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px 8px rgba(62, 62, 62, 0.485);
+    width: 31%;
+    margin-top: 65px;
+    padding-bottom: 75px;
+}
+.tituloRegistro{
+    color: white;
+    font-size: 2.6em;
+    text-align: center;
+    margin: 0;
+    margin-top: 35px;
+    margin-bottom: 45px;
+    text-shadow: 4px 4px 3px #004f4c;
+}
+.formularioRegistro{
+    display: flex;
+    flex-direction: column;
+}
+.textoRegistro{
+    margin: 0px 55px;
+    color: white;
+    border: none;
+    font-size: 17px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+.campoRegistro{
+    margin: 0px 55px;
+    background-color: transparent;
+    font-size: 16px;
+    border: none;
+    height: 23px;
+    margin-bottom: 30px;
+    color: white;
+    border-bottom: 2px solid rgb(220, 220, 220);
+    padding: 3px 10px;
+}
+.campoRegistro:focus{
+  outline: none;
+}
+.botonResgiter1{
+    background-color: #00a99b;
+    margin: 0 auto;
+    width: 45%;
+    border: 2px solid #00ac9e;
+    font-size: 19px;
+    margin-top: 35px;
+    color: white;
+    padding: 5px 0px;
+    border-radius: 10px;
+    text-shadow: 1px 1px 5px #006c63;
+    box-shadow: 1px 1px 5px 1px #00332f;
+}
+.botonResgiter1:hover{
+    transform: scale(1.05);
+    background-color: #00baaa;
+}
+.botonResgiter2{
+    background-color: #00a99b;
+    margin: 0 auto;
+    width: 100%;
+    border: 2px solid #00ac9e;
+    font-size: 19px;
+    margin-top: 15px;
+    color: white;
+    padding: 5px 0px;
+    border-radius: 10px;
+    text-shadow: 1px 1px 5px #006c63;
+    box-shadow: 1px 1px 5px 1px #00332f;
+}
+.botonResgiter2:hover{
+    background-color: #00baaa;
+    transform: scale(1.05);
+}
+.enlaceBotonRegister{
+    margin: 0 auto;
+    width: 45%;
+    text-align: center;
+    text-decoration: none;
+}
+/* Contacto */
+.contenedorContactoForm{
+    display: flex;
+    margin-top: 80px;
+}
+.cajaRegistro1{
+    width: 85%;
+    margin: 30px 40px 30px 60px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(230, 230, 230);
+    border-radius: 10px;
+}
+.cajaRegistro2{
+    width: 100%;
+    margin: 30px 80px 30px 0px;
+}
+.formularioContacto{
+    flex-direction: column;
+    display: flex;
+}
+.titulo1Contacto{
+    font-size: 45px;
+    margin: 0;
+    margin-bottom: 10px;
+    color: #007e7a;
+    margin-top: 20px;
+    text-align: center;
+}
+.texto1Contacto{
+    font-size: 21px;
+    margin: 0;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+.tituloFormContact{
+    color: #007e7a;
+    font-size: 35px;
+    margin: 0;
+    margin: 25px 30px;
+}
+.textoFormContact{
+    font-size: 17px;
+    margin: 3px 50px;
+}
+.campoFormContac{
+    margin: 3px 50px 30px 50px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+    font-size: 16px;
+}
+.campoFormContac:focus{
+    outline: none;
+    font-size: 16px;
+}
+.campoAreaFormContac{
+    background-color: transparent;
+    margin: 3px 50px 30px 50px;
+    border: none;
+    border-bottom: 2px solid black;
+    font-size: 16px;
+    height: 92px;
+}
+.campoAreaFormContac:focus{
+    outline: none;
+    font-size: 16px;
+}
+.botonEnviarContacto{
+    background-color: #00d1c0;
+    margin: 0 auto;
+    border: 2px solid #00ac9e;
+    font-size: 17px;
+    padding: 5px 60px;
+    border-radius: 5px;
+    margin-top: 25px;
+    box-shadow: 1px 1px 1px 1px #006d64;
+    transition: 0.3s ease, transform 0.2s ease;
+}
+.botonEnviarContacto:hover{
+    transform: scale(1.03);
+    background-color: #00baaa;
+}
+.textoMotivadorFormcontac{
+    text-align: center;
+    margin: 30px 50px 30px 50px;
+    font-size: 14px;
+}
+.contenedorContactanosPara{
+    margin-top: 90px;
+    margin-bottom: 100px;
+}
+.tituloContactanosPara{
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+.contenedorCajasContactanosPara{
+    display: flex;
+}
+.cajaImgContactanosPara{
+    width: 100%;
+    margin: 10px 40px;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 20px;
+}
+.imgContactanosPara{
+    width: 50%;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.textoImgContactanos{
+    margin-top: 15px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.6em;
+    }
+
+    section h2 {
+        font-size: 2em;
+    }
+    nav ul li a {
+        font-size: 0.8em;
+    }
+    section p {
+        font-size: 1em;
+    }
+}

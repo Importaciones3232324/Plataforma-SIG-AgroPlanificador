@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Perfil</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/compost.png">
+</head>
+<body>
+    <header>
+        <h1>Plataforma SIG AgroPlanificador</h1>
+        <nav>
+            <ul>
+                <li><a class="enlaceNav" href="index.html">Inicio</a></li>
+                <li><a class="enlaceNav" href="mapaInteractivo.html">Mapa Interactivo</a></li>
+                <li><a class="enlaceNav" href="registro.html">Registro</a></li>
+                <li><a class="enlaceNav" href="contacto.html">Contacto</a></li>
+                <li><a class="enlaceNav" href="perfil.html">Mi Perfil</a></li> <!-- Enlace a perfil -->
+            </ul>
+        </nav>
+        <div class="fondo1Perfil"></div>
+    </header>
+    <div class="cuerpo">
+        <div class="contenedorGeneral">
+            <div class="cotenedor1Perfil">
+                <h2 class="tituloPerfil">Mi Perfil</h2>
+                <p class="textoPPerfil">Bienvenido a tu perfil. Aquí puedes consultar tu información básica registrada en el sistema.</p>
+                <p class="textoPerfil" id="noPerfil"></p>
+                <p class="textoPerfil" id="nombreUsuario"></p>
+                <p class="textoPerfil" id="emailUsuario"></p>
+                <p class="textoPerfil" id="ubicacionUsuario"></p>
+            </div>
+            <div class="cotenedor2Perfil">
+                <img src="img/use.png" alt="" class="imgUser">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="piePagina">
+            <div class="pieRegistrarse">
+                <p class="pieTituloGrande">Registrate</p>
+                <p class="textoPieRegister">¡Forma parte de nuestra comunidad y vive la experiencia completa! Regístrate en solo unos segundos y accede a beneficios exclusivos, contenido único y todas las herramientas que tenemos para ti. 
+                    <br>¡No esperes más y únete hoy mismo!</p>
+                <button class="botonPie"><a class="botonTextoPieRegister" href="registro.html">Regístrate</a></button>
+            </div>
+            <div class="pieEnlaces">
+                <p class="pieTitulo3">Enlaces</p>
+                <ul class="pieEnlacesLista">
+                    <li class="espacioEnlacesPie"><a class="pieEnlaces" href="index.html">Inicio</a></li>
+                    <li class="espacioEnlacesPie"><a class="pieEnlaces" href="mapaInteractivo.html">Mapa Interactivo</a></li>
+                    <li class="espacioEnlacesPie"><a class="pieEnlaces" href="registro.html">Registro</a></li>
+                    <li class="espacioEnlacesPie"><a class="pieEnlaces" href="contacto.html">Contacto</a></li>
+                    <li class="espacioEnlacesPie"><a class="pieEnlaces" href="perfil.html">Mi Perfil</a></li>
+                </ul>
+                <p class="pieTitulo3">Políticas y Términos</p>
+                <ul class="pieEnlacesLista">
+                    <li class="espacioEnlacesPie"><a class="pieEnlaces" href="">Política de privacidad</a></li>
+                    <li class="espacioEnlacesPie"><a class="pieEnlaces" href="">Términos y condiciones</a></li>
+                </ul>
+                <p class="pieTitulo3">Atribución</p>
+                <ul class="pieEnlacesLista">
+                    <li class="espacioEnlacesPie"><a class="pieEnlaces" href="https://www.flaticon.es" target="_blank">Flaticon</a></li>
+                    <a class="pieEnlaces" target="_blank" href="https://icons8.com">Icons8</a>
+                </ul>
+            </div>
+            <div class="pieContactanos">
+                <p class="pieTitulo1">Contactanos</p>
+                <p class="pieTextoContacto">Horario de atención:
+                    <br>Lunes a viernes de 10:00 a.m. a 8:00 p.m.</p>
+                <p class="pieTextoContacto">Correo Electrónico:
+                    <br>sigagroplanificador@gmail.com</p>
+                <p class="pieTextoContacto">Celular: 
+                    <br>+51 974847248</p>
+                <p class="pieTitulo2">Siguenos</p>
+                    <div>
+                        <a href=""><img class="imgRedesSociles1" src="img/icons8-youtube-play-100.png" alt=""></a>
+                        <a href=""><img class="imgRedesSociles2" src="img/icons8-facebook-100.png" alt=""></a>
+                        <a href=""><img class="imgRedesSociles3" src="img/icons8-twitterx-100.png" alt=""></a>
+                        <a href=""><img class="imgRedesSociles4" src="img/icons8-instagram-96.png" alt=""></a>
+                    </div>
+            </div>
+        </div>
+        <div class="derechosPagina">
+            <p class="textoDerechos">&copy; 2025 <span>Plataforma SIG AgroPlanificador</span> | Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+<script>
+    window.onload = function() {
+        var usuario = JSON.parse(localStorage.getItem('usuario'));
+
+        if (usuario) {
+            document.getElementById('nombreUsuario').textContent = `Nombre: ${usuario.nombre}`;
+            document.getElementById('emailUsuario').textContent = `Correo: ${usuario.email}`;
+            document.getElementById('ubicacionUsuario').textContent = `Ubicación: ${usuario.ubicacion}`;
+        } else {
+            document.getElementById('noPerfil').innerHTML = "No tienes un perfil registrado.";
+        }
+    };
+</script>
+</html>

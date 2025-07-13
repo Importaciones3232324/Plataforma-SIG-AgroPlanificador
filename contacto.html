@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/compost.png">
+</head>
+<body>
+    <header>
+        <h1>Plataforma SIG AgroPlanificador</h1>
+        <nav>
+            <ul>
+                <li><a class="enlaceNav" href="index.html">Inicio</a></li>
+                <li><a class="enlaceNav" href="mapaInteractivo.html">Mapa Interactivo</a></li>
+                <li><a class="enlaceNav" href="registro.html">Registro</a></li>
+                <li><a class="enlaceNav" href="contacto.html">Contacto</a></li>
+                <li><a class="enlaceNav" href="perfil.html">Mi Perfil</a></li> <!-- Enlace a perfil -->
+            </ul>
+        </nav>
+        <div class="fondo1Contactanos"></div>
+    </header>
+    <div class="cuerpo">
+        <div>
+            <h1 class="titulo1Contacto">¿Tienes alguna pregunta o sugerencia?</h1>
+            <p class="texto1Contacto">Estamos aquí para ayudarte. Cuéntanos lo que necesites y te responderemos lo antes posible.</p>
+        </div>
+        <div class="contenedorContactoForm">
+            <div class="cajaRegistro1">
+                <h2 class="tituloFormContact">Contáctanos</h2>
+                <form class="formularioContacto" id="contactForm" action="https://formspree.io/f/myzjqeqq" method="POST">
+                    <label for="contactNombre" class="textoFormContact">Nombre</label>
+                    <input class="campoFormContac" type="text" id="contactNombre" name="nombre" required>
+
+                    <label for="contactEmail" class="textoFormContact">Correo electrónico</label>
+                    <input class="campoFormContac" type="email" id="contactEmail" name="email" required>
+
+                    <label for="message" class="textoFormContact">Mensaje</label>
+                    <textarea class="campoAreaFormContac" id="message" name="mensaje" required></textarea>
+
+                    <button type="submit" class="botonEnviarContacto">Enviar</button>
+                    <p id="mensajeConfirmacion" class="textoMotivadorFormcontac">¡Gracias por escribirnos! <br> 
+                        Tu mensaje es importante para nosotros.</p>
+                </form>
+            </div>
+            <div class="cajaRegistro2">
+                <img src="img/imgContactanos.png" alt="" width="100%">
+            </div>
+        </div>
+        <div class="contenedorContactanosPara">
+            <p class="tituloContactanosPara">Puedes contactarnos para:</p>
+            <div class="contenedorCajasContactanosPara">
+                <div class="cajaImgContactanosPara">
+                    <img class="imgContactanosPara" src="img/consulta.png" alt="">
+                    <p class="textoImgContactanos">✅ Consultas generales</p>
+                </div>
+                <div class="cajaImgContactanosPara">
+                    <img class="imgContactanosPara" src="img/apoyo.png" alt="">
+                    <p class="textoImgContactanos">✅ Soporte o ayuda técnica</p>
+                </div>
+                <div class="cajaImgContactanosPara">
+                    <img class="imgContactanosPara" src="img/buenos-comentarios.png" alt="">
+                    <p class="textoImgContactanos">✅ Comentarios y sugerencias</p>
+                </div>
+                <div class="cajaImgContactanosPara">
+                    <img class="imgContactanosPara" src="img/colaborar.png" alt="">
+                    <p class="textoImgContactanos">✅ Colaboraciones o propuestas</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="piePagina">
+            <div class="pieRegistrarse">
+                <p class="pieTituloGrande">Registrate</p>
+                <p class="textoPieRegister">¡Forma parte de nuestra comunidad y vive la experiencia completa! Regístrate en solo unos segundos y accede a beneficios exclusivos, contenido único y todas las herramientas que tenemos para ti. 
+                    <br>¡No esperes más y únete hoy mismo!</p>
+                <button class="botonPie"><a class="botonTextoPieRegister" href="registro.html">Regístrate</a></button>
+            </div>
+            <div class="pieEnlaces">
+                <p class="pieTitulo3">Enlaces</p>
+                <ul class="pieEnlacesLista">
+                    <li class="espacioEnlacesPie"><a class="pieEnlaces" href="index.html">Inicio</a></li>
+                    <li class="espacioEnlacesPie"><a class="pieEnlaces" href="mapaInteractivo.html">Mapa Interactivo</a></li>
+                    <li class="espacioEnlacesPie"><a class="pieEnlaces" href="registro.html">Registro</a></li>
+                    <li class="espacioEnlacesPie"><a class="pieEnlaces" href="contacto.html">Contacto</a></li>
+                    <li class="espacioEnlacesPie"><a class="pieEnlaces" href="perfil.html">Mi Perfil</a></li>
+                </ul>
+                <p class="pieTitulo3">Políticas y Términos</p>
+                <ul class="pieEnlacesLista">
+                    <li class="espacioEnlacesPie"><a class="pieEnlaces" href="">Política de privacidad</a></li>
+                    <li class="espacioEnlacesPie"><a class="pieEnlaces" href="">Términos y condiciones</a></li>
+                </ul>
+                <p class="pieTitulo3">Atribución</p>
+                <ul class="pieEnlacesLista">
+                    <li class="espacioEnlacesPie"><a class="pieEnlaces" href="https://www.flaticon.es" target="_blank">Flaticon</a></li>
+                    <a class="pieEnlaces" target="_blank" href="https://icons8.com">Icons8</a>
+                </ul>
+            </div>
+            <div class="pieContactanos">
+                <p class="pieTitulo1">Contactanos</p>
+                <p class="pieTextoContacto">Horario de atención:
+                    <br>Lunes a viernes de 10:00 a.m. a 8:00 p.m.</p>
+                <p class="pieTextoContacto">Correo Electrónico:
+                    <br>sigagroplanificador@gmail.com</p>
+                <p class="pieTextoContacto">Celular: 
+                    <br>+51 974847248</p>
+                <p class="pieTitulo2">Siguenos</p>
+                    <div>
+                        <a href=""><img class="imgRedesSociles1" src="img/icons8-youtube-play-100.png" alt=""></a>
+                        <a href=""><img class="imgRedesSociles2" src="img/icons8-facebook-100.png" alt=""></a>
+                        <a href=""><img class="imgRedesSociles3" src="img/icons8-twitterx-100.png" alt=""></a>
+                        <a href=""><img class="imgRedesSociles4" src="img/icons8-instagram-96.png" alt=""></a>
+                    </div>
+            </div>
+        </div>
+        <div class="derechosPagina">
+            <p class="textoDerechos">&copy; 2025 <span>Plataforma SIG AgroPlanificador</span> | Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+<script>
+    const formularioContact = document.getElementById("contactForm");
+
+    document.querySelector("form").addEventListener("submit", function (e) {
+    e.preventDefault();     // Detiene el envío automático con redirección
+    this.submit();          // Envía el formulario manualmente
+    this.reset();           // Limpia los campos justo después
+    });
+</script>
+</html>
